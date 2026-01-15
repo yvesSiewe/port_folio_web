@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+:root{
+    /* primary colors */
+    --lightRed: hsl(0, 100%, 67%);
+    --orangeYellow: hsl(39, 100%, 56%);
+    --greenTeal: hsl(166, 100%, 37%);
+    --cobaltBlue: hsl(234, 85%, 45%);
+
+    /* color for background gradient */
+    --lightSlateBlue: hsl(252, 100%, 67%);
+    --lightRoyalBlue: hsl(241, 81%, 54%);
+    --violetBlueCircle: hsla(256, 72%, 46%, 1);
+    --persianBlueCircle: hsla(241, 72%, 46%, 0);
+
+    /* neutral color*/
+
+    --white: hsl(0, 0%, 100%);
+    --paleBlue: hsl(221, 100%, 96%);
+    --lightLavender: hsl(241, 100%, 89%);
+    --darkGrayBlue: hsl(224, 30%, 27%);
+    
+    /* police weights */
+    --weights500: 500;
+    --weights600: 600;
+    --weights600: 700;
+
+    --borderRaduis: 30px;
+    
+    font-size: 18px;
+    font-family: "Karla", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    display: flex;
+    justify-content: center;
+    background-color: var(--paleBlue);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    /* max-width: 600px; */
+    height: 100vh;
+    background-color: var(--white);
+}
+#firschild{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem !important;
+    gap: 1.5rem;
+    background-image: linear-gradient(var(--lightSlateBlue), var(--cobaltBlue));
+    border-bottom-left-radius: var(--borderRaduis);
+    border-bottom-right-radius: var(--borderRaduis);
+    color: white;
+}
+#firschild section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: white;
+    background-image: radial-gradient(var(--violetBlueCircle) 70% , var(--persianBlueCircle));
+    border-color: var(--cobaltBlue);
+}
+#firschild section p{
+    font-size: 5em;
+    font-weight: var(--weights600);
+    color: white;
+}
+#firschild section span{
+    color: var(--lightSlateBlue);
+    font-size: 0.9rem;
+}
+#firschild p{
+    text-align: center;
+}
+
+#firschild div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+#firschild div span{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+main #secondChild{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+#secondChild section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#secondChild section div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    border-radius: 10px;
+}
+#secondChild div #present{
+    font-weight: var(500);
+    color: var(--darkGrayBlue);
+}
+
+
+#reaction{
+   background-color: hsla(0, 100%, 67%, 0.050);
+}
+#memory{
+   background-color:  hsl(39, 100%, 56%, 0.050);
+}
+#verbal{
+    background-color: hsl(166, 100%, 37%, 0.050);
+}
+#visual{
+    background-color: hsla(234, 85%, 45%, 0.050);
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 1rem;
+    border-radius: var(--borderRaduis);
+    background-color: var(--darkGrayBlue);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1rem;
+}
+img{
+    margin-right: 5px;
+}
+
+@media screen and (min-width: 1440px) {
+    html,body{
+        height: 100vh;
+        align-items: center;
+    }
+    main{
+        flex-direction: row;
+        border-top-right-radius: var(--borderRaduis);
+        border-bottom-right-radius: var(--borderRaduis);
+        height: auto;
+    }
+    #firschild{
+        height: auto;
+        width: 320px;
+        justify-content: space-between;
+        padding: 1.5rem;
+        gap: 0rem;
+        border-top-left-radius: var(--borderRaduis);
+        border-top-right-radius: var(--borderRaduis);
+    }
+   #firschild section{
+        width: 11rem;
+        height: 11rem;
+    }
+    #firschild section p{
+        font-size: 3.5rem;
+    }
+    #secondChild{
+        width: 370px; 
+    }
+}
