@@ -23,16 +23,16 @@ span{
 }
 
 #p1{
-    animation: charge 2s ease-out infinite;
+    animation: charge 2s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
 }
 #p2{
-    animation: charge 2s 200ms ease-out infinite ;
+    animation: charge 2s 200ms cubic-bezier(0.25, 0.1, 0.25, 1) infinite ;
 }
 #p3{
-    animation: charge 2s 400ms ease-out infinite ;
+    animation: charge 2s 400ms cubic-bezier(0.25, 0.1, 0.25, 1) infinite ;
 }
 #p4{
-    animation: charge 2s 600ms ease-out infinite ;
+    animation: charge 2s 600ms cubic-bezier(0.25, 0.1, 0.25, 1) infinite ;
 }
 
 
