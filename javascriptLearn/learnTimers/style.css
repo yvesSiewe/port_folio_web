@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#chrono{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+#chrono div{
+    font-size: 20px;
+}
+
+#chrono span{
+    font-size: clamp(2rem, 5vw, calc(2rem + 5vw));
+}
+
+#buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+button{
+    font-size: 1.3em;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+}
