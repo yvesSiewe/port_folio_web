@@ -98,13 +98,17 @@ button:hover , .social:hover{
 @media screen and (min-width: 1440px) {
    .container{
         gap: 3rem;
-        padding: 5rem 10rem;
+        padding: 5rem 12rem;
         background-image: url('./images/bg-desktop.svg');
    }
    .sonHero{
         flex-direction: row;
         gap: 2rem;
    } 
+   .hero{
+    justify-content: normal;
+    gap: .5rem;
+   }
    h1{
     font-size: 3vw;
    }
