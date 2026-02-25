@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+:root{
+    font-size: 18px;
+}
+html, body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.son{
+    border-radius: 15px;
+}
+h1, h2{
+    line-height: 1;
+}
+h2{
+    font-size: 1.3rem;
+}
+#socialMedia{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    background-color: hsl(256, 67%, 59%);
+    padding: 1.5rem;
+    color: white;
+}
+#socialMedia h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1;
+}
+#socialMedia h1 span{
+    color: hsl(39, 100%, 71%);
+}
+#socialMedia img{
+    max-width: 60%;
+}
+#manage{
+    background-color: hsl(31, 66%, 93%);
+    padding: 1rem;
+}
+#maintain{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: hsl(39, 100%, 71%);
+    gap: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+
+}
+#maintain img{
+    max-width: 65%;
+}
+#schedule{
+    padding: 1.5rem;
+    text-align: center;
+    background-color: hsl(254, 88%, 90%);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#grow{
+    text-align: center;
+    color: white;
+    background-color: hsl(256, 67%, 59%);
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    
+}
+#grow h1{
+    font-size: 1.5rem;
+    
+}
+#fater{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    background-color: antiquewhite;
+}
+#fater img{
+    max-width: 50%;
+}
+#create{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    background-color: hsl(31, 66%, 93%);
+}
+#create h1{
+    font-size: 1.5rem;
+    font-variant: calc(20);
+}
+
+#create h1 i{
+    color: hsl(256, 67%, 59%);
+}
+
+#create img, #write img{
+    max-width: 60%;
+}
+#write h2{
+    font-size: 1.5rem;
+}
+#write{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: hsl(39, 100%, 71%);
+}
+ @media screen and (min-width: 1440px) {
+
+    /* ===== Reset layout desktop ===== */
+    html, body {
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    br {
+        display: none;
+    }
+
+    /* ===== Grid container ===== */
+    .container {
+        max-width: 62%;
+        height: 90vh;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        gap: 30px;
+    }
+
+    /* ===== Images ===== */
+    
+    #create img,
+    #write img, #maintain img {
+        max-width: 100%;
+    }
+
+    #schedule img {
+        height: 60%;
+    }
+
+    #grow img {
+        max-width: 45%;
+    }
+
+    /* ===== Grid positioning ===== */
+
+    #create {
+        grid-column: 1 / 2;
+        grid-row: 1 / 6;
+        padding: 5rem 2rem;
+    }
+
+    #write {
+        grid-column: 1 / 2;
+        grid-row: 6 / 11;
+        padding: 1.3rem;
+        justify-content: space-between;
+    }
+    #write h2{
+        font-weight: 600;
+        font-size: 2rem;
+    }
+
+
+    #socialMedia {
+        grid-column: 2 / 4;
+        grid-row: 1 / 5;
+        align-items: center;
+        justify-content: center;
+        
+    }
+  
+
+    #schedule {
+        grid-column: 4 / 5;
+        grid-row: 1 / 8;
+        text-align: left;
+        justify-content: space-between;
+        padding-right: 0;
+    }
+
+    #manage {
+        grid-column: 2 / 3;
+        grid-row: 5 / 8;
+    }
+
+    #maintain {
+        grid-column: 3 / 4;
+        grid-row: 5 / 8;
+        overflow: hidden;
+        
+    }
+
+    #fater {
+        height: 100%;
+        grid-column: 2 / 3;
+        grid-row: 8 / 11;
+    }
+    #fater img{
+        justify-self: flex-end;
+    }
+
+    #grow {
+        grid-column: 3 / 5;
+        grid-row: 8 / 11;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        padding: 2rem;
+    }
+    .son{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ===== Typography adjustments ===== */
+
+    #grow h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    #create h2 {
+        text-align: left;
+    }
+
+}

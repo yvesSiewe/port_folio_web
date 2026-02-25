@@ -1,3 +1,4 @@
+'use strict';
 let minute = document.querySelector('#minute');
 let seconde = document.querySelector('#seconde');
 let tires = document.querySelector('#tiers');
@@ -56,7 +57,6 @@ class chronometre{
 }
 
 const chrono1 = new chronometre()
-
 start.addEventListener('click', ()=> chrono1.start());
 reset.addEventListener('click', ()=> chrono1.reset());
 stop1.addEventListener('click', ()=> chrono1.stop());
