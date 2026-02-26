@@ -159,12 +159,18 @@ h2{
     /* ===== Images ===== */
     
     #create img,
-    #write img, #maintain img {
+    #write img, #maintain img, #schedule img {
         max-width: 100%;
+    }
+    #manage img{
+        width: 100%;
+        height: auto;
+
     }
 
     #schedule img {
-        height: 60%;
+        flex-grow: 1;
+    
     }
 
     #grow img {
@@ -211,6 +217,8 @@ h2{
     #manage {
         grid-column: 2 / 3;
         grid-row: 5 / 8;
+        justify-content: space-between;
+        overflow-x: hidden;
     }
 
     #maintain {
@@ -224,9 +232,12 @@ h2{
         height: 100%;
         grid-column: 2 / 3;
         grid-row: 8 / 11;
+        display: flex;
+        
     }
     #fater img{
-        justify-self: flex-end;
+        margin-top: auto;
+        max-width: 100%;
     }
 
     #grow {
@@ -253,6 +264,14 @@ h2{
 
     #create h2 {
         text-align: left;
+    }
+
+    #manage h2{
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+    #fater h1{
+        font-size: 2.5rem;
     }
 
 }
