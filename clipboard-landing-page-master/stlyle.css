@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+:root {
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+
+  --weight-400: 400;
+  --weight-600: 600;
+
+  --green: hsl(171, 66%, 44%);
+  --blue: hsl(233, 100%, 69%);
+  --gray-dark: hsl(210, 10%, 33%);
+  --gray-light: hsl(201, 11%, 66%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+/* header style */
+
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2.5rem;
+  background-image: url("./images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  background-repeat: center;
+  background-size: cover;
+}
+.header-text,
+.btn-container {
+  gap: 1.5rem;
+}
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header-title,
+.header-paragraph {
+  text-align: center;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+button {
+  padding: 1rem 2rem;
+  font-size: 16px;
+  border-radius: 30px;
+  color: white;
+  border: none;
+  box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.418);
+}
+.ios {
+  background-color: var(--green);
+}
+.mac {
+  background-color: var(--blue);
+}
+
+/* style main */
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+  gap: 3rem;
+}
+.section-snippets {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.intro h2,
+.intro p,
+h3,
+h3 + p {
+  text-align: center;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+img {
+  width: 100%;
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+aside div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.section-access,
+.section-workflow,
+.workflow-grid div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section-workflow,
+.section-access {
+  gap: 2.5rem;
+}
+.workflow-grid div {
+  gap: 1rem;
+}
+aside img {
+  width: 3rem;
+}
+
+.section-logos,
+.section-download {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+.section-logos {
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+.section-logos img {
+  width: 50%;
+}
+
+footer,
+.footer-links,
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer {
+  gap: 3rem;
+  padding: 3rem;
+}
+.footer-links {
+  gap: 2rem;
+}
+.footer-links a {
+  text-decoration: none;
+  color: black;
+}
+.footer-logo img {
+  display: inline-block;
+  width: 50%;
+  margin: auto;
+}
+.footer-socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 1000px) {
+  header {
+    background-image: url("./images/bg-header-desktop.png");
+    height: 85vh;
+    padding-top: 15%;
+    align-items: center;
+    justify-content: start;
+  }
+  .btn-container {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  main {
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 10rem;
+    gap: 10rem;
+  }
+  .section-snippets {
+    gap: 5rem;
+  }
+  .section-snippets .intro p {
+    width: 39%;
+    line-height: 25px;
+  }
+
+  .description {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10rem;
+  }
+  .description img {
+    width: 50%;
+  }
+  .intro p {
+    width: 30%;
+  }
+  .description aside {
+    justify-content: flex-start;
+    align-items: center;
+    align-self: center;
+    width: 25%;
+    padding: 0;
+    gap: 2rem;
+  }
+  .description aside h3,
+  .description aside p {
+    text-align: left;
+  }
+  aside div {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .section-access,
+  .section-workflow,
+  .section-download {
+    gap: 5rem;
+  }
+  .workflow-grid,
+  .section-logos {
+    flex-direction: row;
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+
+  footer {
+    flex-direction: row;
+    padding: 15rem;
+    background-color: var(--gray-light);
+    padding: 0 10rem;
+    justify-content: space-around;
+  }
+  .footer-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .footer-links a {
+    flex-grow: 2;
+    flex-basis: 2;
+  }
+  .section-access .intro p {
+    /* background-color: red; */
+    width: 80%;
+  }
+  .section-download .intro p {
+    width: 60%;
+  }
+  .section-workflow .intro p {
+    width: 100%;
+  }
+}
