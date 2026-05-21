@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+:root {
+  --Dark_Grayish_Blue: hsl(217, 19%, 35%);
+  --Dark_Blue: hsl(214, 17%, 51%);
+  --Grayish_Blue: hsl(212, 23%, 69%);
+  --Light_Grayish_Blue: hsl(210, 46%, 95%);
+  --pading: 3rem;
+  --gap: 1.5rem;
+  --border_raduis: 15px;
+  font-size: 13px;
+}
+
+html,
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--Light_Grayish_Blue);
+}
+
+.card {
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--border_raduis);
+  background: white;
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 100%;
+  display: block;
+}
+
+.card-body {
+  padding: var(--pading);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.card-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 30px;
+  color: var(--Dark_Grayish_Blue);
+}
+
+section {
+  background-color: var(--Dark_Blue);
+  padding: 2rem;
+}
+
+.card-avatar {
+  display: flex;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.link span {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 1.5rem;
+}
+
+section {
+  display: none;
+}
+
+.card-avatar,
+.card-cont {
+  display: flex;
+  align-items: center;
+}
+
+.card-cont {
+  gap: 1rem;
+}
+
+.cicle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./images/avatar-michelle.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-avatar {
+  justify-content: space-between;
+}
+
+.share {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--Dark_Grayish_Blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 999px) {
+  .card {
+    flex-direction: row;
+    width: 900px;
+  }
+
+  .card-img {
+    width: 40%;
+  }
+
+  .card-img img {
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: var(--border_raduis);
+  }
+
+  .card-body {
+    width: 60%;
+  }
+
+  .share img {
+    color: white;
+  }
+}
