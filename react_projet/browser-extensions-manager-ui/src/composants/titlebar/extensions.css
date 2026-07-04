@@ -1,0 +1,18 @@
+:root{
+    --neutral_900: hsl(0, 0%, 78%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--neutral_900);
+}
