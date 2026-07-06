@@ -20,7 +20,9 @@ function App() {
         handleMode={changeMode}
       />
       <section>
-        <ExtensionList/>
+        <ExtensionList
+          mode={mode}
+        />
       </section>
     </div>
   )

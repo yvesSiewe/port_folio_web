@@ -6,13 +6,22 @@ import './extensions.css'
 function Extension({mode, handleMode}){
 
     return(
-        <header>
+        <header
+            style={{
+                backgroundColor: mode ? 'white': 'hsl(225, 23%, 24%)',
+                borderRadius: '20px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between'
+            }}
+        >
             <div>
-                <img src={logoEx} alt="Extantions_logo" />
+                <img src={logoEx} alt="Extantions_logo" width='85%' style={{color: 'white', filter: mode ?? 'brightness(0) invert(1)'}}/>
             </div>
             <ButtonThemeMode 
                 themeClick = {handleMode}
                 link = {mode ? iconMoon : iconSun}
+                mode={mode}
             />
         </header>
     )

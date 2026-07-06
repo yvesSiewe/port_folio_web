@@ -1,9 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
 }
 .myApp{
   height: 100vh;
   padding: 2rem 15vw;
+}
+
+button{
+  cursor: pointer;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 22px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: 0.3s;
+}
+
+.toggle-slider::before {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 3px;
+  bottom: 3px;
+  background-color: hsl(200, 60%, 99%);
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.toggle-switch input:checked + .toggle-slider {
+  background-color: hsl(3, 71%, 56%);
+}
+
+.toggle-switch input:checked + .toggle-slider::before {
+  transform: translateX(18px);
+}
+
+.toggle-switch input:focus-visible + .toggle-slider {
+  outline: 2px solid hsl(3, 71%, 56%);
+  outline-offset: 2px;
+}
+
+@media screen and (max-width: 800px) {
+  .myApp{
+    height: auto;
+    padding: 20px;
+  }
+
+  main{
+    flex-direction: column;
+  }
+  .navExtensions{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .card{
+    width: 100% !important;
+  }
+  .container{
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 }
