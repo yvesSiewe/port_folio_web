@@ -10,6 +10,9 @@ function App() {
   return (
     <>
       <header>Hello les gens</header>
+      <main>
+        <p>Les gars github est free je vous assure cela permet de versionner le code est c'est cool cela.</p>
+      </main>
     </>
   )
 }
